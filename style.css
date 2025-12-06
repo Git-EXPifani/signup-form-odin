@@ -1,12 +1,72 @@
-:root {
+@font-face {
+  font-family: "Norse";
+  src:
+    url("font/Norse-Bold.woff2") format("woff2"),
+    url("font/Norse-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
   box-sizing: border-box;
 }
-header {
-  width: 100%;
-  height: 10vh;
+
+body {
+  margin: 0;
+  /* padding: 0; */
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-img-logo {
+  position: relative;
+  flex: 1.5;
+  margin: 0;
+  padding: 0;
+  background: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover; /* fill container and keep aspect ratio */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* avoid tiling */
+}
+
+.left-img-logo {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
+  justify-content: flex-end;
+}
+
+.black-bar-logo {
+  display: flex;
+  padding: 10px 0;
+  position: absolute;
+  top: 130px;
+  height: 17vh;
   width: 100%;
-  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+img[src="images/odin-lined.png"] {
+  width: 90px;
+  height: auto;
+  margin-left: auto;
+}
+
+span {
+  font-family: "Norse", system-ui;
+  font-size: 5em;
+  color: white;
+  margin-right: auto;
+  align-self: center;
+}
+
+.right-form {
+  flex: 2.5;
 }
